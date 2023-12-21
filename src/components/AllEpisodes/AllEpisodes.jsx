@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DATA from '../../DATA.json';
-import { Button } from '../../ui/Button';
+import { Button } from '../../c_ui/Button';
 
 export const AllEpisodes = ({ season, episode, setEpisode }) => {
   const episodeText = 'серія';
