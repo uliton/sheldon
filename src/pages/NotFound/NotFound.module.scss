@@ -1,0 +1,8 @@
+@import '../../style/utils/variables';
+@import '../../style/utils/mixins';
+
+.notFound {
+  font-size: 32px;
+  text-align: center;
+  color: $color_blue;
+}

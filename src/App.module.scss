@@ -1,0 +1,9 @@
+@import './style/utils/variables';
+@import './style/utils/mixins';
+
+.app {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid $color_green;
+  border-radius: 12px;
+}

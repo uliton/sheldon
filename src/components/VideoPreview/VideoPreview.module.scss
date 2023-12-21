@@ -1,0 +1,43 @@
+@import '../../style/utils/variables';
+@import '../../style/utils/mixins';
+
+.videoPreview {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background-image: url(./sheldon_bg_2.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  &__play {
+    width: 56px;
+    transition: all .5s;
+  }
+
+  &__text {
+    font-weight: bold;
+    color: $color_white;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .videoPreview__play {
+      transform: scale(1.1);
+    }
+  }
+}
