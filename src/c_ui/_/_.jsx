@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './_.module.scss';
 
 export const _ = () => {
@@ -8,3 +9,5 @@ export const _ = () => {
     </div>
   );
 };
+
+_.propTypes = {}

@@ -5,7 +5,12 @@ import { Button } from '../../c_ui/Button';
 
 export const AllSeasons = ({ season, setSeason }) => {
   return (
-    <>
+    <div style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '8px',
+      justifyContent: 'center',
+    }}>
       {DATA.map((item, i) => (
         <Button
           key={i}
@@ -15,7 +20,7 @@ export const AllSeasons = ({ season, setSeason }) => {
           currentValue={season}
         />
       ))}
-    </>
+    </div>
   );
 };
 

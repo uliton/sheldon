@@ -8,7 +8,12 @@ export const AllEpisodes = ({ season, episode, setEpisode }) => {
   const episodes = DATA[season - 1].episodes;
 
   return (
-    <>
+    <div style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '8px',
+      justifyContent: 'center',
+    }}>
       {episodes.map((_, i) => (
         <Button
           key={i}
@@ -18,7 +23,7 @@ export const AllEpisodes = ({ season, episode, setEpisode }) => {
           currentValue={episode}
         />
       ))}
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,13 @@
+@import '../../style/utils/variables';
+@import '../../style/utils/mixins';
+
+.description {
+  color: $color_white;
+  font-size: 12px;
+  text-align: justify;
+
+  &::before {
+    content: '';
+    margin-left: 24px;
+  }
+}

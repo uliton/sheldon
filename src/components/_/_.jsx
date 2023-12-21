@@ -1,10 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './_.module.scss';
 
-export const A = () => {
+export const _ = () => {
   return (
     <div className={style._}>
-      A
+      _
     </div>
   );
 };
+
+_.propTypes = {}
